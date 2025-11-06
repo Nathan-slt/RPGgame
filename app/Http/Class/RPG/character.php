@@ -1,9 +1,9 @@
 <?php
 
 class character{
-    private string $name;
-    private int $health;
-    private int $attack;
+    protected string $name;
+    protected int $health;
+    protected int $attack;
 
 public function __construct(string $name , int $health , int $attack){
     $this->name = $name;
@@ -49,5 +49,4 @@ public function isAlive(): bool {
     }
 
 }
-
 ?>
