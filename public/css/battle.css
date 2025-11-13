@@ -1,0 +1,19 @@
+body {
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat;
+    /* Define a altura mínima para o corpo da página cobrir a tela */
+    min-height: 100vh;
+    /* Centraliza o conteúdo (o .title-screen) na tela */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background-color: white; /* Cor de fundo branca, como na imagem */
+    font-family: "Pixelify Sans", sans-serif;
+}
+
+#console {
+    background-color: blueviolet;
+}

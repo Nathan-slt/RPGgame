@@ -1,6 +1,6 @@
 <?php
 
-class character{
+class Character{
     protected string $name;
     protected int $health;
     protected int $attack;

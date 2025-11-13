@@ -16,3 +16,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('title_screen');
 });
+
+Route::get('/new_game', function () {
+    return view('battle');
+});

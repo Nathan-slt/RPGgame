@@ -1,6 +1,5 @@
 <?php
-
-class player extends character {
+class Player extends Character {
     private int $xp;
     
 public function __construct(string $name , int $health , int $attack , int $xp)

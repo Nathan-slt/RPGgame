@@ -1,0 +1,85 @@
+body {
+    background-image: url('https://cdnb.artstation.com/p/assets/images/images/047/533/209/original/dom-m0sd3v-greenbill.gif?1647837370');
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat;
+    /* Define a altura mínima para o corpo da página cobrir a tela */
+    min-height: 100vh;
+    /* Centraliza o conteúdo (o .title-screen) na tela */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background-color: white; /* Cor de fundo branca, como na imagem */
+}
+
+.title-screen {
+    /* Estrutura principal que contém o logo e o menu */
+    display: flex;
+    flex-direction: column; /* Organiza os itens (logo e menu) verticalmente */
+    align-items: center; /* Centraliza o logo e o menu horizontalmente */
+
+    /* --- ALTERAÇÃO PARA AUMENTAR O ESPAÇAMENTO INFERIOR --- */
+    /* Posiciona o contêiner 10vh mais alto do que o centro original */
+    position: relative; /* Necessário para que o 'top' relativo funcione */
+    gap: 225px;
+}
+
+/* --- ESTILOS DO LOGO --- */
+.logo {
+    text-align: center;
+}
+
+.logo img { 
+    height: 350px; /* Tamanho do logo */
+    width: auto;
+}
+
+/* --- ESTILOS DO MENU --- */
+.menu {
+    text-align: center;
+}
+
+.menu a {
+    color: white;
+    background-color: rgba(0, 13, 130, 0.726);
+    font-family: "Pixelify Sans", sans-serif;
+    font-size: 50px;
+    font-weight: 400;
+    font-style: normal;
+    border-radius: 10px;
+    text-decoration: none;
+    display: block; /* Garante que cada link ocupe uma linha inteira */
+    margin-bottom: 5px; /* Pequeno espaçamento entre os itens do menu */
+    padding: 5px 0; /* Adiciona um padding para a área de hover/active */
+    transition: transform 0.2s ease, color 0.2s ease; /* Transição suave para hover */
+}
+
+.menu a:hover {
+    background-color: rgba(0, 26, 255, 0.41);
+    transform: scale(1.05); /* Aumenta o texto em relação ao tamanho original */
+}
+
+.menu a:active {
+    color: rgb(0, 115, 207); /* Cor azul do Sonic */
+    transform: scale(1.01); /* Pequena mudança para indicar clique */
+}
+
+/* --- ESTILOS DO FOOTER --- */
+footer {
+    position: absolute; /* Fixa o footer no canto inferior */
+    bottom: 10px;
+    left: 10px;
+    padding: 0;
+    margin: 0;
+    font-family: 'arial', sans-serif;
+    font-size: 12px;
+    color: rgb(255, 255, 255);
+}
+
+p {
+    font-family: "DotGothic16", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+}
