@@ -3,17 +3,68 @@ body {
     background-position: center;
     background-repeat: repeat;
     /* Define a altura mínima para o corpo da página cobrir a tela */
-    min-height: 100vh;
     /* Centraliza o conteúdo (o .title-screen) na tela */
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     margin: 0;
     background-color: white; /* Cor de fundo branca, como na imagem */
     font-family: "Pixelify Sans", sans-serif;
 }
 
-#console {
-    background-color: blueviolet;
+h1 {
+    font-size: 5rem;
+    color: rgb(192, 0, 0);
+    text-align: center;
+    align-items: top;
+    top: 50%;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
+
+#console {
+    background-color: rgb(255, 252, 203);
+    border: 5px groove rgb(0, 0, 0);
+    position: fixed;
+    bottom: 0; 
+    left: 0;   
+    height: 25%; 
+    width: 65%;
+    padding: 1rem;
+    box-sizing: border-box;
+    z-index: 50; 
+    text-align: left;
+    line-height: 1.5;
+}
+
+#skill {
+    border: 5px groove rgb(0, 0, 0);
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    height: 25%; 
+    width: 35%;
+    padding: 1rem;
+    box-sizing: border-box;
+    z-index: 50; 
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.button1, .button2 {
+            position: static;
+            display: flex;
+            flex-direction: column;
+            gap: 0.5px;
+        }
+
+.button3, .button4 {
+            position: static;
+            display: flex;
+            flex-direction: column;
+            gap: 0.5px;
+        }

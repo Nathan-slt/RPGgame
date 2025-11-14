@@ -32,7 +32,7 @@ body {
 }
 
 .logo img { 
-    height: 350px; /* Tamanho do logo */
+    height: 450px; /* Tamanho do logo */
     width: auto;
 }
 
@@ -73,13 +73,22 @@ footer {
     left: 10px;
     padding: 0;
     margin: 0;
-    font-family: 'arial', sans-serif;
-    font-size: 12px;
-    color: rgb(255, 255, 255);
-}
-
-p {
     font-family: "DotGothic16", sans-serif;
     font-size: 18px;
     font-weight: 500;
+    color: rgb(255, 255, 255);
+}
+
+.fade-overlay {
+    position: fixed;
+    inset: 0;
+    background: black;
+    animation: fadeOut 1.2s ease forwards;
+    z-index: 9999;
+    pointer-events: none; /*--Após os eventos, a página volta a ter interatividade*/
+}
+
+@keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
 }

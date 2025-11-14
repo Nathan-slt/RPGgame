@@ -14,6 +14,10 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
+    return view('before_start');
+});
+
+Route::get('/title_screen', function () {
     return view('title_screen');
 });
 
